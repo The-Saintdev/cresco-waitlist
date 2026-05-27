@@ -149,7 +149,7 @@ export default async function handler(req, res) {
               — Team Cresco AI
             </p>
             <p style="font-size: 12px; color: #584235; margin-top: 8px;">
-              Built in Lagos. Serving the world.
+              Built in Nigeria. Serving the world.
             </p>
           </div>
         </div>

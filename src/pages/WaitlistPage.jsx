@@ -80,7 +80,7 @@ export default function WaitlistPage() {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          padding: "20px 48px",
+          padding: "clamp(16px, 3vw, 20px) clamp(20px, 5vw, 48px)",
           position: "sticky",
           top: 0,
           zIndex: 100,
@@ -106,16 +106,17 @@ export default function WaitlistPage() {
 
         <div className="badge badge-primary">Early Access</div>
       </nav>
-
       {/* HERO */}
+      // Replace the hero section style
       <section
         style={{
-          padding: "80px 48px 60px",
+          padding: "clamp(40px, 8vw, 80px) clamp(20px, 5vw, 48px) 60px",
           maxWidth: 1100,
           margin: "0 auto",
           display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          gap: 80,
+          gridTemplateColumns:
+            "repeat(auto-fit, minmax(min(100%, 400px), 1fr))",
+          gap: "clamp(32px, 5vw, 80px)",
           alignItems: "center",
         }}
       >
@@ -134,7 +135,7 @@ export default function WaitlistPage() {
 
           <h1
             style={{
-              fontSize: "3.25rem",
+              fontSize: "clamp(2rem, 5vw, 3.25rem)",
               fontWeight: 700,
               lineHeight: 1.1,
               letterSpacing: "-0.02em",
@@ -215,7 +216,13 @@ export default function WaitlistPage() {
           </div>
 
           {/* Stats */}
-          <div style={{ display: "flex", gap: 40 }}>
+          <div
+            style={{
+              display: "flex",
+              gap: "clamp(20px, 4vw, 40px)",
+              flexWrap: "wrap",
+            }}
+          >
             {[
               { value: "50", label: "Beta users selected" },
               { value: "4", label: "Core AI features" },
@@ -292,7 +299,6 @@ export default function WaitlistPage() {
           </div>
         </div>
       </section>
-
       {/* FEATURES */}
       <section
         style={{
@@ -319,7 +325,8 @@ export default function WaitlistPage() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(2, 1fr)",
+              gridTemplateColumns:
+                "repeat(auto-fit, minmax(min(100%, 300px), 1fr))",
               gap: 24,
             }}
           >
@@ -379,7 +386,6 @@ export default function WaitlistPage() {
           </div>
         </div>
       </section>
-
       {/* BOTTOM CTA */}
       <section
         style={{
@@ -409,13 +415,12 @@ export default function WaitlistPage() {
           </button>
         </div>
       </section>
-
       {/* FOOTER */}
       <footer
         style={{
           background: "var(--surface-container-lowest)",
           borderTop: "1px solid rgba(88, 66, 53, 0.2)",
-          padding: "32px 48px",
+          padding: "clamp(24px, 4vw, 32px) clamp(20px, 5vw, 48px)",
         }}
       >
         <div
@@ -423,9 +428,9 @@ export default function WaitlistPage() {
             maxWidth: 1100,
             margin: "0 auto",
             display: "flex",
+            flexWrap: "wrap",
             alignItems: "center",
             justifyContent: "space-between",
-            flexWrap: "wrap",
             gap: 16,
           }}
         >
@@ -560,7 +565,6 @@ export default function WaitlistPage() {
           </div>
         </div>
       </footer>
-
       {/* MODAL FOR WAITLIST FORM */}
       {isModalOpen && (
         <div
@@ -667,7 +671,7 @@ export default function WaitlistPage() {
                   className="label-sm"
                   style={{ color: "var(--primary-container)" }}
                 >
-                  BUILT IN LAGOS. SERVING THE WORLD.
+                  BUILT IN NIGERIA. SERVING THE WORLD.
                 </div>
               </div>
             ) : (
