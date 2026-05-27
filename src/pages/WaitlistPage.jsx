@@ -107,7 +107,6 @@ export default function WaitlistPage() {
         <div className="badge badge-primary">Early Access</div>
       </nav>
       {/* HERO */}
-      // Replace the hero section style
       <section
         style={{
           padding: "clamp(40px, 8vw, 80px) clamp(20px, 5vw, 48px) 60px",
@@ -153,7 +152,7 @@ export default function WaitlistPage() {
                 WebkitTextFillColor: "transparent",
               }}
             >
-              African Business
+              African Businesses & Creators
             </span>
           </h1>
 

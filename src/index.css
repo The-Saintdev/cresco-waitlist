@@ -585,8 +585,8 @@ body {
 
   /* Footer */
   footer div {
-    flex-direction: column !important;
-    text-align: center !important;
+    /* flex-direction: column !important; */
+    /* text-align: center !important; */
     gap: 16px !important;
   }
 }
